@@ -68,6 +68,9 @@ const PERMISSIONS = Object.freeze({
   ANSWER_PHONE_CALLS: 'android.permission.ANSWER_PHONE_CALLS',
   READ_PHONE_NUMBERS: 'android.permission.READ_PHONE_NUMBERS',
   UWB_RANGING: 'android.permission.UWB_RANGING',
+  READ_MEDIA_IMAGES: 'android.permission.READ_MEDIA_IMAGES',
+  READ_MEDIA_VIDEO: 'android.permission.READ_MEDIA_VIDEO',
+  POST_NOTIFICATIONS:'android.permission.POST_NOTIFICATIONS'
 });
 
 /**
@@ -112,6 +115,9 @@ class PermissionsAndroid {
     WRITE_CALL_LOG: string,
     WRITE_CONTACTS: string,
     WRITE_EXTERNAL_STORAGE: string,
+    READ_MEDIA_IMAGES: string,
+    READ_MEDIA_VIDEO: string,
+    POST_NOTIFICATIONS: string,
   |} = PERMISSIONS;
   RESULTS: {|
     DENIED: $TEMPORARY$string<'denied'>,
